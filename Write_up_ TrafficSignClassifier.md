@@ -19,14 +19,15 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./Testimages/60.png  "Traffic Sign 1"
-[image5]: ./Testimages/ahead.png "Traffic Sign 2"
-[image6]: ./Testimages/giveway.png "Traffic Sign 3"
-[image7]: ./Testimages/noentry.png"Traffic Sign 4"
-[image8]: ./Testimages/nopassintruck.png "Traffic Sign 5"
-[image9]: ./Testimages/prioroad.png "Traffic Sign 6"
-[image10]: ./Testimages/stop.png "Traffic Sign 7"
-[image10]: ./data_dist.png "Data distribution"
+[image4]: ./Testimages/60.png 
+[image5]: ./Testimages/ahead.png
+[image6]: ./Testimages/giveway.png
+[image7]: ./Testimages/noentry.png
+[image8]: ./Testimages/nopassintruck.png
+[image9]: ./Testimages/prioroad.png
+[image10]: ./Testimages/stop.png
+[image11]: ./data_dist.png
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -36,14 +37,6 @@ The goals / steps of this project are the following:
 ---
 
 ### Data Set Summary & Exploration
-
-	/examples/placeholder.png 	
-	/examples/visualization.jpg 	
-	/examples/grayscale.jpg 	
-	/Testimages/noentry.png 	
-	/Testimages/prioroad.png 	
-	/Testimages/stop.png 	
-	/Testimages/giveway.png 
 	
 #### 1. Basic summary of the data set
 I used the numpys library to calculate summary statistics of the traffic signs data set.
@@ -123,8 +116,12 @@ To start the LeNet architecture from previous Udacity excersise was chosen. The 
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image4] 
+![alt text][image5] 
+![alt text][image6] 
+![alt text][image7] 
+![alt text][image8] 
+![alt text][image9]
 ![alt text][image10]
 
 The first image will be impossible to classify since it were not part of the training set.
