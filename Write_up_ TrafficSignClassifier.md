@@ -72,26 +72,27 @@ I used scaling and rotation with a random number of the images since they are tr
 
 For every image in the training set another augmented image was created hence doubling the size of the training set but keeping the distribution since it matched well with validation and test set.
 
-####2. Model architecture 
+#### 2. Model architecture 
 Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
+| Layer         	|     Description	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x1 gray scale image   					| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | 1x1 stride, same padding, outputs 16x16x4     |
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
- 
+| Input         	| 32x32x1 gray scale image   			| 
+| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x6 	|
+| RELU			|						|
+| Max pooling	      	| 2x2 stride,  outputs 16x16x4 		|
+| Dropout		| dropout probability 0.75			|
+| Convolution 3x3	| 1x1 stride, same padding, outputs 16x16x4     |
+| RELU			|						|
+| Max pooling		|  						|
+| Dropout		| dropout probability 0.75			|
+| Fully connected	| etc.		     				|
+| Softmax		| etc.        					|
 
 
-####3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used an Adam optimizer with the following parameters.
 
@@ -100,7 +101,7 @@ To train the model, I used an Adam optimizer with the following parameters.
 * learning rate: 0.001
 * dropout probability: 0.75
 
-####4. Describe the approach taken to find feasable architecture 
+#### 4. Describe the approach taken to find feasable architecture 
 
 My final model results were:
 * training set accuracy of 1.000
@@ -110,9 +111,9 @@ My final model results were:
 To start the LeNet architecture from previous Udacity excersise was chosen. The architecture showed very good result on the training set but didn't generalize so well for the validation set indicating overfitting and dropout was introduced in order to reguralize the problem, see above for tuning. Also reducing number of weights by working with grey scale images reduced overfitting. 
 
 
-###Test a Model on New Images
+### Test a Model on New Images
 
-####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
+#### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are five German traffic signs that I found on the web:
 
@@ -136,7 +137,7 @@ Here are the results of the prediction:
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
