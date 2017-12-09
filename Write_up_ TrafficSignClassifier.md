@@ -77,19 +77,25 @@ Describe what your final model architecture looks like including model type, lay
 
 My final model consisted of the following layers:
 
-| Layer         	|     Description	        		| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         	| 32x32x1 gray scale image   			| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x6 	|
-| RELU			|						|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x4 		|
-| Dropout		| dropout probability 0.75			|
-| Convolution 3x3	| 1x1 stride, same padding, outputs 16x16x4     |
-| RELU			|						|
-| Max pooling		|  						|
-| Dropout		| dropout probability 0.75			|
-| Fully connected	| etc.		     				|
-| Softmax		| etc.        					|
+| Layer         	|     Description	        			| 
+|:---------------------:|:-----------------------------------------------------:| 
+| Input         	| 32x32x1 gray scale image   				| 
+| Convolution 3x3     	| 1x1 stride, same padding, outputs 28x28x6 		|
+| RELU			|							|
+| Max pooling	      	| 2x2 stride,  outputs 16x16x4, same padding 		|
+| Dropout		| dropout probability 0.75				|
+| Convolution 3x3	| 1x1 stride, same padding, outputs 10x10x16		|
+| RELU			|							|
+| Max pooling		| 2x2 stride, outputs 5x5x16, same padding 		|	
+| Dropout		| dropout probability 0.75				|
+| Flatten		| output 400 		     				|
+| Fully connected	| output 120						|
+| RELU			| 							|
+| Fully connected	| output 84						|
+| RELU			| 							|
+| Fully connected	| output 43, no of classses				|
+| RELU			| 							|
+| Softmax		| etc.        						|
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
