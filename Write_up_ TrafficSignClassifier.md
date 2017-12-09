@@ -19,11 +19,13 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./Testimages/60.png  "Traffic Sign 1"
+[image5]: ./Testimages/ahead.png "Traffic Sign 2"
+[image6]: ./Testimages/giveway.png "Traffic Sign 3"
+[image7]: ./Testimages/noentry.png"Traffic Sign 4"
+[image8]: ./Testimages/nopassintruck.png "Traffic Sign 5"
+[image9]: ./Testimages/prioroad.png "Traffic Sign 6"
+[image10]: ./Testimages/stop.png "Traffic Sign 7"
 [image10]: ./data_dist.png "Data distribution"
 
 ## Rubric Points
@@ -57,7 +59,7 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 ![image 10](https://github.com/ChristerAkerblom/Udacity/blob/master/data_dist.png)
 
-
+---
 ### Design and Test a Model Architecture
 
 #### 1. Data preprocessing
@@ -95,20 +97,18 @@ My final model consisted of the following layers:
 | RELU			| 							|
 | Fully connected	| output 43, no of classses				|
 | RELU			| 							|
-| Softmax		| etc.        						|
+| Softmax		|         						|
 
 
-#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
-
+#### 3. Training of the model
 To train the model, I used an Adam optimizer with the following parameters.
 
 * batch size: 128
-* no of epochs: 60
-* learning rate: 0.001
+* no of epochs: 100
+* learning rate: 0.0008
 * dropout probability: 0.75
 
-#### 4. Describe the approach taken to find feasable architecture 
-
+#### 4. Approach taken to find feasable architecture 
 My final model results were:
 * training set accuracy of 1.000
 * validation set accuracy of 0.954
@@ -116,7 +116,7 @@ My final model results were:
 
 To start the LeNet architecture from previous Udacity excersise was chosen. The architecture showed very good result on the training set but didn't generalize so well for the validation set indicating overfitting and dropout was introduced in order to reguralize the problem, see above for tuning. Also reducing number of weights by working with grey scale images reduced overfitting. 
 
-
+---
 ### Test a Model on New Images
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
@@ -124,11 +124,12 @@ To start the LeNet architecture from previous Udacity excersise was chosen. The 
 Here are five German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image7] ![alt text][image8] ![alt text][image9]
+![alt text][image10]
 
 The first image will be impossible to classify since it were not part of the training set.
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
