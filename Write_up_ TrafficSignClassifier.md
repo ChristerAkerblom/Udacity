@@ -29,7 +29,8 @@ The goals / steps of this project are the following:
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-### [Project code](https://github.com/ChristerAkerblom/Udacity/Traffic_Sign_Classifier-Grey scale-v2.ipynb ) 
+### The project code can be found [here](https://github.com/ChristerAkerblom/Udacity/blob/master/Traffic_Sign_Classifier-Grey%20scale-v2.ipynb) 
+---
 
 ### Data Set Summary & Exploration
 
@@ -39,11 +40,10 @@ The goals / steps of this project are the following:
 	/Testimages/noentry.png 	
 	/Testimages/prioroad.png 	
 	/Testimages/stop.png 	
-	/Testimages/giveway.png 	
-#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
-
-I used the numpys library to calculate summary statistics of the traffic
-signs data set:
+	/Testimages/giveway.png 
+	
+#### 1. Basic summary of the data set
+I used the numpys library to calculate summary statistics of the traffic signs data set.
 
 * The size of training set is 34799
 * The size of the validation set is 4410
@@ -52,13 +52,9 @@ signs data set:
 * The number of unique classes/labels in the data set is 43
 
 #### 2. Include an exploratory visualization of the dataset.
-
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is distributed over different traffic signs. The distribution is similiar for both train, valid and test data sets.
 
-![Train data set][image1]
-![Valid data set][image2]
-![Test data set][image3]
-
+![image 10][https://github.com/ChristerAkerblom/Udacity/blob/master/data_dist.png]
 
 ### Design and Test a Model Architecture
 
@@ -68,7 +64,7 @@ As a first step, I decided to convert the images to grayscale since it showed sl
 
 Here is an example of a traffic sign image before and after grayscaling.
 
-![alt text][image2]
+![alt text][https://github.com/ChristerAkerblom/Udacity/blob/master/data_dist.png]
 
 As a last step, I normalized to (-1,1) the image data because ...
 I decided to generate additional data because ... 
