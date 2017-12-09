@@ -162,5 +162,8 @@ For the second image ...
 ### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Visual output the network's feature maps
 The trained network used edges to classify images. This can e.g. be seen in the images of the output from the first hidden layer with the priority road sign as input, see below.
-![alt text][image20] ![alt text][image20] ![alt text][image20] 
+
+![alt text][image20] 
+![alt text][image20] 
+![alt text][image20] 
 ![alt text][image20] ![alt text][image20] ![alt text][image20] 
