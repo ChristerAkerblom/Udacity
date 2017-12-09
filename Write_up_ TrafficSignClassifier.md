@@ -62,7 +62,7 @@ I also decided to generate additional data because of two reasons:
 * there were relative few samples for some signs
 * reduce overfitting
 
-I used scaling and rotation with a random number of the images since they are transformations that are not easily hanled by CNN architecture in contrast to e.g. translations. Here is an example of a traffic sign after grayscaling and normalizing and a copy being scaled and rotated randomly before the image waas added to the data set.
+I used scaling and rotation with a random number of the images since they are transformations that are not easily hanled by CNN architecture in contrast to e.g. translations. Here is an example of a traffic sign after grayscaling and normalizing and a copy being scaled and rotated randomly before the image was added to the data set.
 ![alt text](https://github.com/ChristerAkerblom/Udacity/blob/master/scale_rot.png)
 
 For every image in the training set another augmented image was created hence doubling the size of the training set but keeping the distribution since it matched well with validation and test set.
