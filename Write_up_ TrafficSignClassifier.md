@@ -63,19 +63,15 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 #### 1. Data preprocessing
 Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-As a first step, I decided to convert the images to grayscale since it showed slightly better performance on the validation data set and reduced number of weights. 
-As a last step, I normalized to (-1,1) the image data because ...
-I decided to generate additional data because ... 
-
-Here is an example of a traffic sign after grayscaling and the a copy being scaled and rotated randomly before the image waas added to the data set.
+As a first step, I decided to convert the images to grayscale since it showed slightly better performance on the validation data set and reduced number of weights. The data was the normalized to (-1,1) to improve backpropagation performance.  
+I also decided to generate additional data because of two reasons:
+* there were relative few samples for some signs
+* reduce overfitting
+I used scaling and rotation with a random number of the images since they are transformations that are not easily hanled by CNN architecture in contrast to e.g. translations. Here is an example of a traffic sign after grayscaling and normalizing and a copy being scaled and rotated randomly before the image waas added to the data set.
 ![alt text](https://github.com/ChristerAkerblom/Udacity/blob/master/scale_rot.png)
 
-To add more data to the the data set, I used scaling and rotation of the images since they are transfomrations that are not easily hanled by CNN architecture in contrast to translations.
+For every image in the training set another augmented image was created.
 
-Here is an example of an original image and an augmented image:
-![alt text](https://github.com/ChristerAkerblom/Udacity/blob/master/scale_rot.png)
-
-The difference between the original data set and the augmented data set is the following ... 
 
 
 ####2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
