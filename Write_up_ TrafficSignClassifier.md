@@ -114,7 +114,7 @@ To start the LeNet architecture from previous Udacity excersise was chosen. The 
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are seven German traffic signs that I found on the web:
 
 ![alt text][image4] 
 ![alt text][image5] 
@@ -130,14 +130,15 @@ The first image will be impossible to classify since it were not part of the tra
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
-
+| Image			        |     Prediction	        	| 
+|:-----------------------------:|:-------------------------------------:| 
+| 60 km/h     			| 60 km/h  				| 
+| Agead     			| Ahead 				|
+| Yield				| Yield					|
+| No entry	      		| No entry				|
+| Truck no passing		| Truck no passing     			|
+| Prio road			| Prio road				|
+| Stop				| Stop					|
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
 
