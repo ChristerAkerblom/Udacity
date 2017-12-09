@@ -159,5 +159,8 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 For the second image ... 
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+### Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
+#### 1. Visual output the network's feature maps
+The trained network used edges to classify images. This can e.g. be seen in the images of the output from the first hidden layer with the priority road sign as input, see below.
+![alt text][image20] ![alt text][image20] ![alt text][image20] 
+![alt text][image20] ![alt text][image20] ![alt text][image20] 
