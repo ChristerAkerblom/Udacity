@@ -29,7 +29,7 @@ The goals / steps of this project are the following:
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
 
 ---
-### [Project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb) 
+### [Project code]( Udacity/Traffic_Sign_Classifier-Grey scale-v2.ipynb ) 
 
 ### Data Set Summary & Exploration
 
