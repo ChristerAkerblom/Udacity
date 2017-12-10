@@ -97,15 +97,15 @@ My final model consisted of the following layers:
 To train the model, I used an Adam optimizer with the following parameters.
 
 * batch size: 128
-* no of epochs: 100
-* learning rate: 0.0008
+* no of epochs: 50
+* learning rate: 0.0005
 * dropout probability: 0.75
 
 #### 4. Approach taken to find feasable architecture 
 My final model results were:
-* training set accuracy of 1.000
-* validation set accuracy of 0.954
-* test set accuracy of 0.941
+* training set accuracy of 0.995
+* validation set accuracy of 0.948
+* test set accuracy of 0.934
 
 To start the LeNet architecture from previous Udacity excersise was chosen. The architecture showed very good result on the training set but didn't generalize so well for the validation set indicating overfitting and dropout was introduced in order to reguralize the problem, see above for tuning. Also reducing number of weights by working with grey scale images reduced overfitting. 
 
@@ -124,7 +124,7 @@ Here are seven German traffic signs that I found on the web:
 ![alt text][image9]
 ![alt text][image10]
 
-The first image will be impossible to classify since it were not part of the training set.
+The images are not real world examples and compeltely noise free, anyway intereting since this kind ofimages are not part of the training set.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -132,7 +132,7 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        	| 
 |:-----------------------------:|:-------------------------------------:| 
-| 60 km/h     			| 60 km/h  				| 
+| 60 km/h     			| 30 km/h  				| 
 | Agead     			| Ahead 				|
 | Yield				| Yield					|
 | No entry	      		| No entry				|
@@ -140,22 +140,21 @@ Here are the results of the prediction:
 | Prio road			| Prio road				|
 | Stop				| Stop					|
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 6 of the 7 traffic signs, which gives an accuracy of 86%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+All images except 60 km/h waspredicted with almot probability one and is not further disucussed. The top 5 probabilities for 60 km/h is presented below. 
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
+| Probability         	|     Prediction	        		| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
+| .65         		| 30 km/h 	  				| 
+| .30     		| Keep right					|
+| .04			| 50 km/h					|
+| .01	       		| 20 km/h					|
+| 			| 120 km/h     					|
+| 			| 60 km/h
 
 For the second image ... 
 
@@ -164,6 +163,4 @@ For the second image ...
 The trained network used edges to classify images. This can e.g. be seen in the images of the output from the first hidden layer with the priority road sign as input, see below.
 
 ![alt text][image20] 
-![alt text][image20] 
-![alt text][image20] 
-![alt text][image20] ![alt text][image20] ![alt text][image20] 
+
