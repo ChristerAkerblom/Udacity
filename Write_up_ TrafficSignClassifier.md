@@ -108,7 +108,7 @@ My final model results were:
 * validation set accuracy of 0.948
 * test set accuracy of 0.934
 
-To start the LeNet architecture from previous Udacity excersise was chosen. The architecture showed very good result on the training set but didn't generalize so well for the validation set indicating overfitting and dropout was introduced in order to reguralize the problem, see above for tuning. Also reducing number of weights by working with grey scale images reduced overfitting. 
+To start the LeNet architecture from previous Udacity excersise was chosen. The architecture showed very good result on the training set but didn't generalize so well for the validation set indicating overfitting and dropout was introduced in order to reguralize the problem. Also reducing number of weights by working with grey scale images reduced overfitting. 
 
 ---
 ### Test a Model on New Images
