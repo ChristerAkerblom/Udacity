@@ -27,6 +27,7 @@ The goals / steps of this project are the following:
 [image9]: ./Testimages/prioroad.png
 [image10]: ./Testimages/stop.png
 [image11]: ./data_dist.png
+[image20]: ./features.png
 
 
 ## Rubric Points
@@ -124,7 +125,7 @@ Here are seven German traffic signs that I found on the web:
 ![alt text][image9]
 ![alt text][image10]
 
-The images are not real world examples and compeltely noise free, anyway intereting since this kind ofimages are not part of the training set.
+The images are not real world examples and totally noise free, anyway intereting since this kind ofimages are not part of the training set.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
